@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace LabWork.Interface
-{
-    /// <summary>
+﻿    /// <summary>
     /// Интерфейс, который является шаблоном для всех кодирующих алгоритмов.
     /// </summary>
     internal interface ICodingMachine
@@ -28,8 +22,4 @@ namespace LabWork.Interface
         /// /// <param name="СompressedText"> Текст который надо раскодировать </param>
         /// <returns> Раскодированный текст </returns>
         internal string Decoder(string СompressedText);
-
-
-
     }
-}
