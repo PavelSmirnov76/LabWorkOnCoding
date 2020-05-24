@@ -32,7 +32,7 @@ namespace LabWork
                             Console.Write((bit ? 1 : 0) + "");
                         }
                         Console.WriteLine();
-                        Console.WriteLine("Степень зжатия: {0}", Math.Round(Convert.ToDouble(input.Length) / Convert.ToDouble(encoded.Length),2));
+                        Console.WriteLine("Степень зжатия: {0}", Math.Round(Convert.ToDouble(input.Length*8) / Convert.ToDouble(encoded.Length),2));
                         break;
                         
                     case "2":
