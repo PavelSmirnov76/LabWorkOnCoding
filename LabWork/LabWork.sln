@@ -7,7 +7,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "1HuffmanСoding", "LabWork\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "2Fano-ShannonCodes", "Fano-ShannonCodes\2Fano-ShannonCodes.csproj", "{03927D41-061C-41E4-A5B6-35327BC957CC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3ArithmeticCoding", "3ArithmeticCoding\3ArithmeticCoding.csproj", "{8B116C26-D6BB-4967-9BBF-D3700CCE86A9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "3ArithmeticCoding", "3ArithmeticCoding\3ArithmeticCoding.csproj", "{8B116C26-D6BB-4967-9BBF-D3700CCE86A9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5LZ77", "5LZ77\5LZ77.csproj", "{594938BB-FB82-46FA-AFED-094085DE0C5A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{8B116C26-D6BB-4967-9BBF-D3700CCE86A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8B116C26-D6BB-4967-9BBF-D3700CCE86A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8B116C26-D6BB-4967-9BBF-D3700CCE86A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{594938BB-FB82-46FA-AFED-094085DE0C5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{594938BB-FB82-46FA-AFED-094085DE0C5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{594938BB-FB82-46FA-AFED-094085DE0C5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{594938BB-FB82-46FA-AFED-094085DE0C5A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
