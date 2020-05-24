@@ -49,6 +49,36 @@ namespace LabWork
             }
 
         }
+        public void Build(Dictionary<char, int> frequencies)
+        {
+
+            Frequencies = frequencies;
+            foreach (KeyValuePair<char, int> symbol in Frequencies)
+            {
+                nodes.Add(new Node(symbol.Key, symbol.Value));
+            }
+
+            while (nodes.Count > 1)
+            {
+                List<Node> orderedNodes = nodes.OrderBy(node => node.Frequency).ToList<Node>();
+
+                if (orderedNodes.Count >= 2)
+                {
+                    List<Node> taken = orderedNodes.Take(2).ToList<Node>();
+
+                    Node parent = new Node('*', taken[0].Frequency + taken[1].Frequency, taken[0], taken[1]);
+
+
+                    nodes.Remove(taken[0]);
+                    nodes.Remove(taken[1]);
+                    nodes.Add(parent);
+                }
+
+                this.Root = nodes.FirstOrDefault();
+
+            }
+
+        }
         public void Print()
         {
             _print(Root);
@@ -78,6 +108,8 @@ namespace LabWork
 
             return bits;
         }
+
+
 
         public string Decode(BitArray bits)
         {
