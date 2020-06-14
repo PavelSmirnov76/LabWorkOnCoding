@@ -17,5 +17,7 @@ namespace _5LZ77
             Label.Add(new Node(0, 0, ProactiveBuffer[0]));
             return Label;
         }
+
+
     }
 }
